@@ -17,7 +17,7 @@ It uses the following custom scripts:
 
 * [filter2.py](/pipeline_lncrnas/scripts/filter2.py): Executable script to filter the gffcompare output for novel potential lncRNAs.
 
-`filter2_pbmc.py [gffcompare.gtf] [outdir]`
+`filter2.py [gffcompare.gtf] [outdir]`
 
 * [translate3frames.py](/pipeline_lncrnas/scripts/translate3frames.py): Executable script to translate sequences in the 3 possible frames.
 
@@ -35,6 +35,7 @@ Scripts for obtaining CAGE peaks from downloaded preprocessed data (modified fro
 
 Script for downloading raw data and obtaining histone CHIP-seq peaks.
 
-## Differential expression and co-expression analyses ([R_analyses](R_analyses))
+## Differential expression and co-expression analyses
 
-R scripts for the different functional analyses: Differential expression analysis, co-expression analysis and differential co-expresion network analysis.
+* [diff_expr.R](/diff_expr.R): Differential expression analysis
+* [coex.R](/coex.R): Co-expression analysis and differential co-expresion network analysis
