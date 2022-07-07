@@ -11,7 +11,21 @@ Snakemake pipeline configured for a HPC server with Slurm. Conda environments ar
 
 ## LncRNA identification pipeline ([pipeline_lncrnas](pipeline_lncrnas))
 
-Snakemake pipeline for the detection of unannotated lncRNAs from the transcriptome assembly. It uses custom scripts.
+Snakemake pipeline for the detection of unannotated lncRNAs from the transcriptome assembly. Packages needed: gffcompare, gffread, HMMER, CPAT and FEELnc.
+
+It uses the following custom scripts:
+
+* [filter2.py](/pipeline_lncrnas/scripts/filter2.py): Executable script to filter the gffcompare output for novel potential lncRNAs.
+
+`filter2_pbmc.py [gffcompare.gtf] [outdir]`
+
+* [translate3frames.py](/pipeline_lncrnas/scripts/translate3frames.py): Executable script to translate sequences in the 3 possible frames.
+
+`translate3frames.py [dna_sequences.fa] [output.fa]`
+
+* [classification_lncrnas.py](/pipeline_lncrnas/scripts/classification_lncrnas.py): Executable script to classify lncRNAs by location to nearest gene. The [pybedtools](https://github.com/daler/pybedtools) suite is necessary.
+
+`classification_lncrnas.py [lncrna_list.txt] [gffcompare.gtf] [ensembl.gtf] [outdir]`
 
 ## CAGE-seq data analysis ([cage](cage))
 
