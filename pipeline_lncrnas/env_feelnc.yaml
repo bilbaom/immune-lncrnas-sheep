@@ -1,0 +1,7 @@
+name: feelnc_customlnc
+channels:
+  - bioconda
+  - anaconda
+  - conda-forge
+dependencies:
+  - feelnc=0.2

@@ -1,0 +1,20 @@
+# absolute path to the working folders
+project-folder: /media/labo/Datuak/atlas/custom_lnc
+ref-folder: /media/labo/Datuak/atlas/references
+script-folder: /media/labo/Datuak/atlas/scripts
+annotation: /media/labo/Datuak/atlas/references/Ovis_aries_rambouillet.Oar_rambouillet_v1.0.102.gtf
+genome: /media/labo/Datuak/atlas/references/Ovis_aries_rambouillet.Oar_rambouillet_v1.0.dna.toplevel.fa
+params:
+  hmmer:
+    # pfam protein domains library
+    pfam: /media/labo/Datuak/atlas/references/Pfam-A.hmm
+    # E-value
+    eval: '0.05'
+  cpat:
+    # trained logistic regression R data
+    logit-data: /media/labo/Datuak/Encefalo/cpat/cowmodel/cow.logit.RData
+    # hexamer info tsv file from training
+    hexamer-data: /media/labo/Datuak/Encefalo/cpat/cowmodel/cow_hexamer.tsv
+  feelnc:
+    coding-seq: /media/labo/Datuak/Encefalo/cpat/cowmodel/codingrna2cow.fasta
+    noncoding-seq: /media/labo/Datuak/Encefalo/cpat/cowmodel/noncoding2cow.fasta
