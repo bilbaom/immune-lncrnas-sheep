@@ -1,0 +1,26 @@
+# file with samples (sra accesions)
+sample-table: /gscratch/debbiarm/atlas/immunetissues_exp.csv
+run-table: /gscratch/debbiarm/atlas/immunetissues_runs.csv
+# absolute path to the working folders
+project-folder: /home/debbiarm/atlas
+data-folder: /gscratch/debbiarm/atlas
+reference-folder: /gscratch/debbiarm/references
+# references
+annotation: /gscratch/debbiarm/references/Ovis_aries_rambouillet.Oar_rambouillet_v1.0.102.gtf
+genome: /gscratch/debbiarm/references/Ovis_aries_rambouillet.Oar_rambouillet_v1.0.dna.toplevel.fa
+# parameters for programs
+params:
+  cutadapt:
+    # threshold used for quality trimming
+    phread_score: '30'
+    # path to file containing adapter sequence that might be ligated to 3' end of R1 reads
+    adapter_R1: "/gscratch/debbiarm/references/TruSeq3-PE-2.fa"
+    # path to file containing adapter sequence that might be ligated to 3' end of R2 reads
+    adapter_R2: "/gscratch/debbiarm/references/TruSeq3-PE-2.fa"
+    # reads shorter than this length are discarded
+    min_length: '20'
+    # if "any" then the pair is discarded if one of the reads meet the filtering criterium
+    pair_filter: "any"
+  stringtie:
+    # Define here the tpm threshold for the merging step
+    tpm: '1'
