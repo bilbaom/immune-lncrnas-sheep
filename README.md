@@ -29,11 +29,11 @@ It uses the following custom scripts:
 
 ## CAGE-seq data analysis ([cage](cage))
 
-Script for obtaining CAGE peaks from downloaded data.
+Scripts for obtaining CAGE peaks from downloaded preprocessed data (modified from Salavati et al., 2020)
 
 ## CHIP-seq data analysis ([chip](chip))
 
-Script for obtaining histone CHIP-seq peaks from downloaded data.
+Script for downloading raw data and obtaining histone CHIP-seq peaks.
 
 ## Differential expression and co-expression analyses ([R_analyses](R_analyses))
 
