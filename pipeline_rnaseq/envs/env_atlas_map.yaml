@@ -1,0 +1,10 @@
+name: atlas_map
+channels:
+  - bioconda
+  - anaconda
+  - conda-forge
+dependencies:
+  - star=2.7.3a
+  - stringtie=2.0
+  - samtools=1.10
+  - gffread

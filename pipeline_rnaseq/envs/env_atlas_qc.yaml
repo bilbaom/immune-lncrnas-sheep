@@ -1,0 +1,12 @@
+name: atlas_qc
+channels:
+  - bioconda
+  - anaconda
+  - conda-forge
+dependencies:
+  - fastqc
+  - multiqc
+  - cutadapt=3.5
+  - pigz
+  - ipython
+  - python=3.9

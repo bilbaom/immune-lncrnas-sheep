@@ -1,0 +1,10 @@
+name: atlas_base_kalk2020_new
+channels:
+  - bioconda
+  - anaconda
+  - conda-forge
+dependencies:
+  - snakemake
+  - pandas
+  - salmon
+  - mamba

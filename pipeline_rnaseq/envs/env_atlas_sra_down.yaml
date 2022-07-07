@@ -1,0 +1,11 @@
+name: atlas_sra_down
+channels:
+  - bioconda
+  - anaconda
+  - conda-forge
+dependencies:
+  - pandas
+  - sra-tools
+  - parallel
+  - entrez-direct
+  - pigz

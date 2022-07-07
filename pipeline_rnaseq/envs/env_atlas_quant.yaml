@@ -1,0 +1,10 @@
+name: atlas_quant
+channels:
+  - bioconda
+  - anaconda
+  - conda-forge
+dependencies:
+  - subread=1.6.4
+  - samtools=1.10
+  - pandas
+  - kallisto=0.48
