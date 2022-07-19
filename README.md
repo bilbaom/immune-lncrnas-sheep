@@ -7,7 +7,7 @@ Each folder contains specific code for every analysis:
 
 ## RNA-seq analysis pipeline ([pipeline_rnaseq](pipeline_rnaseq))
 
-Snakemake pipeline configured for a HPC server with Slurm. Conda environments are used for reproducible package version. This workflow follows the following steps: Download of RNA-seq data from NCBI SRA, sample preprocessing, mapping to the genome, trancriptome assembly and expression quantification. The workflow is divided into two Snakemake files because of storage memory limit but can be merged if there is enougth storage for all downloaded data and intermeiate files.
+Snakemake pipeline configured for a HPC server with Slurm. Conda environments are used for reproducible package version. This workflow follows the following steps: Download of RNA-seq data from NCBI SRA, sample preprocessing, mapping to the genome, trancriptome assembly and expression quantification. The workflow is divided into two Snakemake files because of storage memory limit but can be merged if there is enougth storage for all downloaded data and intermediate files.
 
 ## LncRNA identification pipeline ([pipeline_lncrnas](pipeline_lncrnas))
 
