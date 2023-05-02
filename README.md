@@ -1,7 +1,7 @@
 # immune-lncrnas-sheep
 This repository contains the pipeline and custom scripts used in the following manuscript:
 
-"Comprehensive analysis of ovine transcriptomic data reveals novel long non-coding RNAs related to the immune response"
+"Transcriptomic meta-analysis reveals unannotated long non-coding RNAs related to the immune response in sheep"
 
 Each folder contains specific code for every analysis:
 
