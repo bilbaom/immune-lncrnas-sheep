@@ -1,7 +1,7 @@
 # immune-lncrnas-sheep
 This repository contains the pipeline and custom scripts used in the following manuscript:
 
-"Transcriptomic meta-analysis reveals unannotated long non-coding RNAs related to the immune response in sheep"
+"Transcriptomic meta-analysis reveals unannotated long non-coding RNAs related to the immune response in sheep"  https://doi.org/10.3389/fgene.2022.1067350
 
 Each folder contains specific code for every analysis:
 
